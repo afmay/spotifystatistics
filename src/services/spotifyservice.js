@@ -25,4 +25,16 @@ const fetchPlaylists = async profile => {
   return response.items;
 };
 
-export { fetchMyTopArtist, fetchArtists, fetchMyTopTrack, fetchTracks, fetchPlaylists };
+const fetchSuggestions = async base => {
+  const response = await getData('recommendations', base, `?limit=30`);
+  return response.items;
+};
+
+export {
+  fetchMyTopArtist,
+  fetchArtists,
+  fetchMyTopTrack,
+  fetchTracks,
+  fetchPlaylists,
+  fetchSuggestions,
+};

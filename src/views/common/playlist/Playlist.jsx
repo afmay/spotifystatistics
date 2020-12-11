@@ -16,9 +16,7 @@ function Playlist(playlist, activePlaylist, analyse) {
     }
     return (
       <div className="playlist-overlay">
-        <p className="analyse-title">
-          Based on Spotify&apos;s classification of the Songs in your Playlist
-        </p>
+        <p className="analyse-title">Some stats on your Playlist</p>
         {analyse.danceability * 100 >= 50 ? null : (
           <div className="analyse-property">
             <p className="analyse-property-title">{`the playlist is ${
