@@ -2,7 +2,7 @@ const config = {
   environment: 'production',
   remoteUrl: 'https://api.spotify.com/v1/',
   spotifyAuthparams: {
-    client_id: 'b9b1bc33ef1746b0b394e0333f15f036',
+    client_id: '6f8f45d707cd42db9c7c1c71575b15ef',
     redirect_uri: `${origin}/spotifycallback`,
     scope:
       'user-read-private user-top-read user-read-recently-played user-read-currently-playing playlist-modify-public playlist-modify-private user-read-play-history',
